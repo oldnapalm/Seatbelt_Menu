@@ -16,3 +16,4 @@ Updated [Seatbelt Menu](https://www.gta5-mods.com/scripts/seatbelt-menu-shadofax
 ## Requirements
 - [ScriptHookV](http://www.dev-c.com/gtav/scripthookv/)
 - [ScriptHookVDotNet](https://github.com/crosire/scripthookvdotnet/releases)
+- [NativeUI](https://github.com/Guad/NativeUI)
