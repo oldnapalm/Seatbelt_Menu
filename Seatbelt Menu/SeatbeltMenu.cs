@@ -65,14 +65,14 @@ public class SeatbeltMenu: Script
 		_menuPool.Add(mainMenu);
 		PlayerMenu(mainMenu);
 		_menuPool.RefreshIndex();
-        Tick += delegate(object o, EventArgs e)
+		Tick += delegate(object o, EventArgs e)
 		{
 			_menuPool.ProcessMenus();
 			Function.Call(Hash.SET_PED_CAN_BE_KNOCKED_OFF_VEHICLE, playerPed, CantFallFromBike_); // this is actually inverted
 			Function.Call(Hash.SET_PED_CAN_BE_DRAGGED_OUT, playerPed, !CantBeDraggedOutOfVehicle_);
 			Function.Call(Hash.SET_PED_CONFIG_FLAG, playerPed, 32, !CantFlyThroughWindscreen_);
 		};
-        KeyDown += delegate(object o, KeyEventArgs e)
+		KeyDown += delegate(object o, KeyEventArgs e)
 		{
 			if (e.KeyCode == OpenMenu)
 			{
